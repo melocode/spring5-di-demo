@@ -9,8 +9,14 @@ import org.springframework.stereotype.Service;
 @Profile({"en","default"}) //set property spring.profiles.active=en to pick this one or blank since it's the default profile
 public class PrimaryGreetingService implements GreetingsService {
 
+    private GreetingRepository greetingRepository;
+
+    public PrimaryGreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
+
     @Override
     public String sayGreeting() {
-        return "Hello -- Primary Greeting Service";
+        return greetingRepository.getEnglishGreeting();
     }
 }
