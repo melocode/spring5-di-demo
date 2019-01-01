@@ -18,8 +18,6 @@ public class GreetingRepositoryImpl implements GreetingRepository {
 
     @Override
     public String getGermanGreeting() {
-
         return "Primärer Grußdienst";
-
     }
 }
