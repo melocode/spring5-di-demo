@@ -1,0 +1,6 @@
+#This is a comment
+
+jms:
+  username: JMS Username
+  password: thePassword
+  url: someUrl
