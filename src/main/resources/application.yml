@@ -4,3 +4,9 @@ jms:
   username: JMS Username
   password: thePassword
   url: someUrl
+
+--- # yml file separator
+spring:
+  profiles: es
+jms:
+  username: JMS Username***In**Spanish
